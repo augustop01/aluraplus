@@ -1,0 +1,165 @@
+:root {
+  --branco-principal: #ffffff;
+  --cinza-secundario: #a5a5a5;
+  --botao-azul: #167bf7;
+  --cor-de-fundo: #00030c;
+  --fonte-princiap: "Inter";
+  --botao-azul-efeito: #3C92FA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--branco-principal);
+  font-family: var(--fonte-princiap);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.principal {
+  background-image: url("img/Background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
+}
+
+.container__caixa {
+  margin: 0 6em;
+}
+
+.container__titulo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.container__imagem {
+  margin: 1em 0 2em 0;
+}
+
+.container__botao {
+  background-color: var(--botao-azul);
+  border-radius: 5px;
+  padding: 1em;
+  color: var(--branco-principal);
+  display: block;
+  text-decoration: none;
+  margin-bottom: 1em;
+}
+
+.container__botao:hover {
+  background-color: var(--botao-azul-efeito);
+  transition: 0.15s;
+}
+
+.botao_secundario {
+  background-color: transparent;
+  border: 2px solid var(--branco-principal);
+}
+
+.botao_secundario:hover {
+  background-color: #ffffff40;
+  transition: 0.15s;
+}
+
+.container__aviso {
+  font-size: 12px;
+  color: var(--cinza-secundario);
+}
+
+.secundario {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.secundario__imagem {
+  width: 80%;
+}
+
+.container__descricao {
+  padding: 2em;
+}
+
+.descricao__titulo {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--branco-principal);
+  margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+  color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.telas {
+  margin-left: 2.3em;
+}
+
+.dispositivos {
+  text-align: center;
+  padding: 0 0 2em 0;
+}
+
+.dispositivos__titulo {
+  font-size: 48px;
+  color: var(--branco-principal);
+}
+
+.dispositivos__lista {
+  display: flex;
+  list-style:none;
+  justify-content: center;
+  margin: 5em 0;
+}
+
+.lista__item {
+  font-size: 32px;
+  color: var(--branco-principal);
+}
+
+.rodape {
+  text-align: center;
+}
+
+.rodape__lista {
+  display: flex;
+  font-size: 16px;
+  list-style: none;
+  margin: 2em 0;
+  justify-content: center;
+}
+
+.lista__link {
+  margin: 0 1.5em;
+}
+
+.lista__link a:hover {
+  color: var(--botao-azul);
+  transition: 0.15s;
+}
+
+.link__rodape {
+  color: var(--branco-principal);
+  text-decoration: none;
+}
+
+.rodape__texto {
+  color: var(--cinza-secundario);
+  margin: 2em;
+  font-size: 14px;
+}
